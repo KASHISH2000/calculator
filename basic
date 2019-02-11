@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>calculator</title>
+    <style>
+        h1 {
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size:60px;
+            background: repeating-linear-gradient(to right,#e91e63,#3f51b5);
+            height:100%;
+            text-align:center;
+
+        }
+        input[type=button] {
+            width: 90px;
+            height: 80px;
+            font-size: 30px;
+            margin: 2px;
+            cursor: pointer;
+            background: #607d8b;
+            color: white;
+            border: none;
+
+        }
+
+        input[type=text] {
+            background: white;
+            width: 98%;
+            height: 66px;
+            padding: 10px;
+            color: #607d8b;
+            margin: 6px;
+            border: none;
+            font-size:20px;
+        }
+
+        .main {
+
+            position: absolute;
+            top: 260px;
+            left: 500px;
+
+        }
+        .bg {
+            background: repeating-linear-gradient(to right,#e91e63,#3f51b5);
+            height:100%;
+        }
+        .view{
+            border-color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1>WORKING CALCULATOR</h1>
+    <div class="bg"></div>
+    <div class="main">
+    <div class="calc">
+        <form name="cal">
+            <fieldset class="view">
+                <input type="text" name="display_result" readonly>
+                <br>
+                <input type="button" value="1" onclick="cal.display_result.value +='1'">
+                <input type="button" value="2" onclick="cal.display_result.value +='2'">
+                <input type="button" value="3" onclick="cal.display_result.value +='3'">
+                <input type="button" value="+" onclick="cal.display_result.value +='+'">
+                <br>
+                <input type="button" value="4" onclick="cal.display_result.value +='4'">
+                <input type="button" value="5" onclick="cal.display_result.value +='5'">
+                <input type="button" value="6" onclick="cal.display_result.value +='6'">
+                <input type="button" value="-" onclick="cal.display_result.value +='-'">
+                <br>
+                <input type="button" value="7" onclick="cal.display_result.value +='7'">
+                <input type="button" value="8" onclick="cal.display_result.value +='8'">
+                <input type="button" value="9" onclick="cal.display_result.value +='9'">
+                <input type="button" value="X" onclick="cal.display_result.value +='X'">
+                <br>
+                <input type="button" value="C" onclick="cal.display_result.value =''">
+                <input type="button" value="0" onclick="cal.display_result.value +='0'">
+                <input type="button" value="=" onclick="cal.display_result.value =eval(cal.display_result.value)">
+                <input type="button" value="/" onclick="cal.display_result.value +='/'">
+          </fieldset>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
