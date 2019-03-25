@@ -32,7 +32,7 @@
         .sideright {
             background-color: darkgrey;
             height: 636%;
-            margin-top: -14px;
+            
         }
 
         input[type=text] {
@@ -67,6 +67,21 @@
         label {
             padding-left: 280px;
             line-height: 60px;
+        }
+        @media only screen and (max-width:600px){
+            input[type=button] {
+            margin-left:25%;
+            margin-right: 75%;
+            
+            }
+            .main {
+            display: grid;
+            grid-template-columns: 10% 80% 10%;
+            }
+            label {
+            padding-left: 100px;
+            line-height: 40px;
+            
         }
     </style>
 </head>
